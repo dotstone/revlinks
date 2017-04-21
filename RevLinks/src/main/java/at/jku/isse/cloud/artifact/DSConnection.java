@@ -360,6 +360,11 @@ public class DSConnection {
 		artifact.setPropertyValue(ws, propertyKey, value);
 	}
 
+	/**
+	 * Adds a long value to a collection artifact.
+	 * @param collArtifact the collection artifact to which the long value is added to
+	 * @param id the value to be added
+	 */
 	public void addValueToCollection(CollectionArtifact collArtifact, long id) {
 		collArtifact.addElement(ws, id);
 	}
